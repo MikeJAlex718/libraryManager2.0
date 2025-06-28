@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a New Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>    
+<body>
+    <h1>+ Add a New Book</h1>
+
+    <form action="{{ url_for('add')}}" method="POST">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" required><br><br>
+
+        <label for="year">Year:</label><br>
+        <input type="number" id="year" name="year" min="0" max="2025" required><br><br>
+
+        <label for="didRead">Have you read it?</label><br>
+        <select id="didRead" name="didRead">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select><br><br>
+
+        <button type="submit">Add Book</button>
+        <a href="{{ url_for('index')}}">Cancel</a>
+    </form>
+</body>
+</html>
