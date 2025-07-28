@@ -8,8 +8,8 @@ from book import Book
 
 load_dotenv()
 
-SUPABASE_URL = "https://yhpuxmffbbnwmojhuaky.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlocHV4bWZmYmJud21vamh1YWt5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA5NTQ3NzMsImV4cCI6MjA2NjUzMDc3M30.OvzWIPNfbj4AcuKT0f8P7fTJZXdYdStnE9xz71je8LE"
+SUPABASE_URL = "https://your_supbase_reference_id.supabase.co"
+SUPABASE_KEY = "your_supabase_anon_key"
 
 from supabase import create_client
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
